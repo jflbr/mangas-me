@@ -1,0 +1,20 @@
+<div class="row" >
+    <div class="col-xs-4 col-md-3 pull-left">
+    	<!-- <div class="col-xs-6 col-md-3"> -->
+        <img ng-href="#" class="img-responsive " ng-src="{{info.thumbnail}}" alt="" ng-click="toChaptersView(info.id)">
+    </div>
+
+    <div class="col-md-7 pull-right">
+        <h2 >{{info.name}}</h2>
+        <h3>Last chapter <button  class = "label label-primary" ng-click="toScansView(info.id,info.lastChapter)">{{info.chapterCount}}</button> </h3>
+        <p>
+        	<div  class = "manga-description-content">
+	        	<span class = "manga-description-item">Description</span><br>
+        		<small>{{info.description}}<br></small>
+        	</div>
+        </p>
+<button class="btn btn-primary" ng-click="toChaptersView(info.id)" >Explore<span class="glyphicon glyphicon-chevron-right"></span></button>
+    </div>
+
+</div>
+<hr>

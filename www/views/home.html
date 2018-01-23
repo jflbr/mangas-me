@@ -1,0 +1,33 @@
+<div>
+    <!-- <div ng-show="isCurrentView(viewStates.LIST)"> -->
+    <div>
+        <div>
+            <main-menu></main-menu>
+        </div>
+
+        <div class="container jfl-appBody">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <h2 class="page-header">Registered mangas  <span class="badge">{{mangaDataList.length}}</span> <br> -->
+           		    <h3 class="page-header">Registered mangas <span class ="label label-info" >{{mangaDataList.length}}</span> <br>	
+                    </h3>
+                    <small>Manga data >>{{mangaDataList}}</small>
+
+                </div>
+            </div>
+
+        <!-- List view -->
+        <div  >
+            <div ng-repeat="mangaData in mangaDataList">
+            	<manga info="mangaData"></manga>
+            </div>	
+        </div>
+
+        </div>
+
+        </div>
+
+	</div>
+</div>

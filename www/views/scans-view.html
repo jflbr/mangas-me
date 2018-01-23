@@ -1,0 +1,18 @@
+<div>
+    <main-menu></main-menu>
+    <div class="container jfl-appBody" ng-init="chapter=getCurrentChapter()">
+  
+      <p>
+        Manga : {{getCurrentChapter().name}} <br>
+        Chapter number : {{getCurrentChapter().number}} <br>
+        ScanCount   : {{getCurrentChapter().scanCount}} <br>
+        Scans url-s : {{getCurrentChapter().scans}}
+      </p>
+
+
+      <p>Raw : <br> {{getCurrentChapter()}}</p>
+
+      <p>Imgs: {{updateCurrentChapterImages()}} </p>
+      
+    </div>
+</div>
